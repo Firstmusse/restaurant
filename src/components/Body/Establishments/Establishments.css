@@ -1,0 +1,105 @@
+.establishments{
+    padding-bottom: 100px;
+    position: relative;
+}
+.establishments::before{
+   
+    content: '';
+    position: absolute;
+    bottom: 440px;
+    left: 150px;
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    background-image: url(../../../assets/img/Establishments-BottomBackground.svg);
+    background-repeat: no-repeat;
+}
+.establishments::after{
+   z-index: -1;
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 150px;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../../assets/img/Establishments-BottomBackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.establishments-title{
+    font-size: 46px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 150px;
+}
+.establishments-block-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.establishments-block-container-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+.establishments-block-container-viewall{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 204px;
+    height: 49px;
+    font-size: 24px;
+    border: 1px solid #65C655;
+    border-radius: 16px;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+.card-container-item{
+    padding-bottom: 15px;
+width: 100%;
+background: #FCFCFC;
+border: 1px solid #E4E4E4;
+z-index: 2;
+}
+.card-container-item>img{
+    width: 100%;
+}
+.card-item-info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+.card-item-info-phone{
+display: flex;  
+align-items: center;
+width: 100%;
+}
+.like{
+    margin-left: auto;
+}
+.card-item-info-adress{
+    display: flex;
+}
+.card-item-info-phone img{
+    padding-right: 5px;
+}
+.card-item-info-adress img{
+    padding-right: 5px;
+}
+.card-item-btn-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

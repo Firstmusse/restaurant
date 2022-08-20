@@ -1,0 +1,12 @@
+.create-account{
+        width: 417px;
+        height: 80px;
+        color: #fff;
+        background: #65C655;
+        border-radius: 16px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        cursor: pointer;
+        border: none;
+}

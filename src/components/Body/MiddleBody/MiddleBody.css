@@ -1,0 +1,35 @@
+.backround-body{
+    background-image: url(../../../assets/img/body-background.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.body-title{
+    font-size: 76px;
+    margin: 260px 0px 0px 0px;
+    width: 45%;
+    word-wrap: break-word;
+}
+.body-subtitle{
+    font-size: 40px;
+    color: #232020;
+    font-weight: 500;
+    width: 50%;
+    margin-top: 140px;
+}
+.body-subtitle span{
+    color: #00BD35;
+}
+
+.body-subtitle-uniqueness{
+width: 70%;
+font-weight: 400;
+font-size: 26px;
+line-height: 31px;
+color: #232020;
+margin-bottom: 70px;
+}

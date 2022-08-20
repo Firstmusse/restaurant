@@ -1,0 +1,58 @@
+
+.select-menu-list{
+    display: none;
+}
+.select-menu-click{
+    cursor: pointer;
+}
+.nav-block-list > li:not(:first-child){
+padding-left: 15px;
+}
+.select-menu ul > li > a{
+    padding: 5px 0 5px 0
+}
+
+.select-menu span::after{
+    content: "";
+    width: 10px;
+  height: 8px;
+  background: linear-gradient(45deg, black 25%, transparent 25%, transparent), linear-gradient(-45deg, black 25%, transparent 25%, transparent), linear-gradient(45deg, transparent 75%, black 75%), linear-gradient(-45deg, transparent 75%, black 75%);
+  background-position: 5px 0;
+  background-size: 10px 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+    transition: 0.5s;
+}
+ .select-menu > ul > li{
+    display: flex;
+ }
+.select-menu  {
+    position: relative;
+    cursor: pointer;
+}
+
+.select-menu span {
+    padding-right: 14px;
+}
+
+.select-menu ul {
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 0.5s;
+    position: absolute;
+    top: calc(100% );
+    left: 10;
+    width: 100%;
+    background-color: #fff;
+}
+
+.select-menu span.active ~ ul {
+    transform: scale(1);
+    height: auto;
+}
+
+.select-menu span.active::after {
+    transform: translateY(-50%) rotate(180deg);
+}

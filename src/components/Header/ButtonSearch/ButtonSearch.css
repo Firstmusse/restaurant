@@ -1,0 +1,15 @@
+.btn-search {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 130px;
+    height: 56px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    background-color: #65C655;
+    color: #4B4747;
+    font-size: 23px;
+    line-height: 28px;
+    cursor: pointer;
+  }
