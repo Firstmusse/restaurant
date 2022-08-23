@@ -1,12 +1,5 @@
-.title-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title{
-    margin: 0;
-    color: #5DB94E;
-    font-size: 25px;
-    padding-left: 10px;
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,5 +1,5 @@
 import './Footer.css'
-
+import { Link } from 'react-router-dom'
 import Facebook from '../../assets/icons/fb-icon.svg'
 import Gmail from '../../assets/icons/gmail-icon.svg'
 import Instagram from '../../assets/icons/instagram-icon.svg'
@@ -13,7 +13,7 @@ function Footer() {
             <div className="footer-nav">
           <a href="#">О нас</a>
           <a href="#">Все заведения</a>
-          <a href="#">Акции</a>
+          <Link to='/action'>Акции</Link>
         </div>
         <div className="footer-social">
             <p>Напишите нам:</p>

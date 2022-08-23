@@ -1,0 +1,50 @@
+.action-block-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.action-add-post-data{
+    font-weight: 400;
+    font-size: 16px;
+}
+.action-block-post-name{
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-decoration-line: underline;
+text-transform: uppercase;
+}
+.action-block-post-title h2{
+    margin: 10px 0 15px 0;
+    font-weight: 400;
+    font-size: 40px; 
+}
+.action-block-time-interval{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+}
+.action-block-title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.action-post-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action-post-img>img{
+    margin: 10px;
+   
+}
+.show-all-btn{
+    border: 1px solid #111010;
+    border-radius: 16px;
+    width: 284px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #fff;
+}

@@ -1,10 +1,11 @@
-.btn-more{
-    background: #65C655;
-border: 1px solid #E4E4E4;
-border-radius: 22px;
-width: 216.53px;
-height: 36.26px;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
+.btn-more {
+  background: #65c655;
+  border: 1px solid #e4e4e4;
+  border-radius: 22px;
+  width: 216.53px;
+  height: 36.26px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
 }

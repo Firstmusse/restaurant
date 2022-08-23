@@ -1,24 +1,38 @@
-import { useState } from 'react';
-import './SelectMenu.css'
+import { useState } from "react";
+import "./SelectMenu.css";
+
+import { Link } from "react-router-dom";
+import { titles } from "../../../constants/estabilishments";
 
 function SelectMenu() {
   const openSelectList = (e) => {
-    e.target.nextSibling.classList.toggle('active')
-  }
+    e.target.nextSibling.classList.toggle("active");
+  };
   let [activeState, setActiveState] = useState(false);
 
-  
   return (
-    <li className='select-menu'>
-      <span className={activeState ? 'active' : ''}onClick={() => setActiveState(activeState = !activeState)}>Все заведении</span>
-    <ul>
-      <li><a href="#" className="select-item">Кафе</a></li>
-      <li><a href="#" className="select-item">Рестораны</a></li>
-      <li><a href="#" className="select-item">Кофейни</a></li>
-      <li><a href="#" className="select-item">Бары</a></li>
-      
-    </ul>
+    <li className="select-menu">
+      <span
+        className={activeState ? "active" : ""}
+        onClick={() => setActiveState((activeState = !activeState))}
+      >
+        Все заведении
+      </span>
+      <ul>
+        <li>
+        <Link to='/restaraunt'>Рестораны</Link>
+        </li>
+        <li>
+        <Link to='/coffe-house'>Кофейни</Link>
+        </li>
+        <li>
+        <Link to='/bars'>Бары</Link>
+        </li>
+        <li>
+        <Link to='/cafe'>Кафе</Link>
+        </li>
+      </ul>
     </li>
-  )
+  );
 }
-export default SelectMenu
+export default SelectMenu;

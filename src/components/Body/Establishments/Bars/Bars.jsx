@@ -1,25 +1,25 @@
 import LiveBar from '../../../../assets/img/LiveBar-bar.svg'
 
 import Geo from '../../../../assets/icons/geo.svg'
-import Phone from '../../../../assets/icons/phone.svg'
+import PhoneIcon from '../../../../assets/icons/phone.svg'
 import Like from '../../../../assets/icons/like.svg'
 
 
 import BtnMore from '../../../Button/Btn-more'
 
-function Bars() {
+function Bars({phone,address,id,name,logo}) {
   return (
     <div className="card-container-item">
     <img src={LiveBar} alt="" />
     <div className="card-item-info">
         <div className="card-item-info-phone">
-            <img src={Phone} alt="" />
-            <p>+996(312)31-15-06</p>
+            <img src={PhoneIcon} alt="" />
+            <p>{phone}</p>
             <a className='like' href='#'><img src={Like} alt="like" /></a>
         </div>
         <div className="card-item-info-adress">
             <img src={Geo} alt="" />
-            <p>пр. Манаса, 57 А, уг. ул. Киевская</p>
+            <p>{address}</p>
         </div>
         
     </div>

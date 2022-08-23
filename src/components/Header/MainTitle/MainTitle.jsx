@@ -1,10 +1,9 @@
-import iconTitle from '../../../assets/icons/icon-main-title.svg'
+import Logo from '../../../assets/logo.svg'
 import './MainTitle.css'
 function MainTitle() {
   return (
     <div className='title-container'>
-        <img className='title-img' src={iconTitle} alt="" />
-        <h1 className='title'>Chtopoest</h1>
+        <img className='title-img' src={Logo} alt="" />
     </div>
   )
 }
