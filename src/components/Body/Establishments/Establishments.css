@@ -65,11 +65,23 @@
     gap: 15px;
 }
 .card-container-item{
-    padding-bottom: 15px;
-width: 100%;
-background: #FCFCFC;
-border: 1px solid #E4E4E4;
-z-index: 2;
+     padding-bottom: 15px;
+     min-height: 300px;
+     width: 100%;
+     background: #FCFCFC;
+     display: flex;
+     border: 1px solid #E4E4E4;
+     z-index: 2;
+     align-content: space-around;
+     flex-direction: column;
+     justify-content: flex-end;
+
+
+
+
+
+
+
 }
 .card-container-item>img{
     width: 100%;

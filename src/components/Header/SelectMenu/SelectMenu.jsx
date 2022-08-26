@@ -1,36 +1,34 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SelectMenu.css";
 
 import { Link } from "react-router-dom";
-import { titles } from "../../../constants/estabilishments";
+import { getCategory } from "../../../services/categoryApi";
 
 function SelectMenu() {
-  const openSelectList = (e) => {
-    e.target.nextSibling.classList.toggle("active");
-  };
-  let [activeState, setActiveState] = useState(false);
-
+  const [activeState, setActiveState] = useState(false);
+  const [list, setCategory] = useState([]);
+  useEffect(() => {
+    getCategory().then((value) => {
+      setCategory(value);
+    });
+    
+  }, []);
   return (
     <li className="select-menu">
       <span
         className={activeState ? "active" : ""}
-        onClick={() => setActiveState((activeState = !activeState))}
+        onClick={() => setActiveState(!activeState)}
       >
-        Все заведении
+        Все заведения
       </span>
       <ul>
-        <li>
-        <Link to='/restaraunt'>Рестораны</Link>
-        </li>
-        <li>
-        <Link to='/coffe-house'>Кофейни</Link>
-        </li>
-        <li>
-        <Link to='/bars'>Бары</Link>
-        </li>
-        <li>
-        <Link to='/cafe'>Кафе</Link>
-        </li>
+        {list.map((category) => {
+          return (
+            <Link key={category.id} to={`establishments/${category.id}`}>
+              <li >{category.name}</li>
+            </Link>
+          );
+        })}
       </ul>
     </li>
   );

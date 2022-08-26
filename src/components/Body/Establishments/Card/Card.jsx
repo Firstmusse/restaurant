@@ -1,11 +1,13 @@
-import "./CardItem.css";
+// import "./CardItem.css";
 import Geo from "../../../../assets/icons/geo.svg";
 import PhoneIcon from "../../../../assets/icons/phone.svg";
 import Like from "../../../../assets/icons/like.svg";
 import BtnMore from "../../../Button/Btn-more";
+
 import { Link } from "react-router-dom";
 
-function CardItem({ card, category}) {
+function Card({ card, category}) {
+  // console.log(card,111);
   return (
     <div className="card-container-item">
       <img src={card.logo} alt="" />
@@ -23,9 +25,10 @@ function CardItem({ card, category}) {
         </div>
       </div>
       <div className="card-item-btn-more">
-      <Link to={`${category}/${card.id}`} state={{title: card.name}}><BtnMore /></Link>
+      <Link to={`${category}/${card.id}`} 
+      state={{title: card.name}}><BtnMore /></Link>
       </div>
     </div>
   );
 }
-export default CardItem;
+export default Card;

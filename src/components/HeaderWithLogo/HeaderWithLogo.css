@@ -1,0 +1,13 @@
+.nav-block-container-with-logo-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-block-container-with-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-block-container-with-logo-group svg{
+    margin-right: 50px;
+}

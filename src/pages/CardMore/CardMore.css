@@ -1,0 +1,173 @@
+.card-more-block{
+    width: 90%;
+    margin: 0 auto;
+}
+.card-tittle-more{
+font-weight: 500;
+font-size: 40px;
+color: #212121;
+margin: 0;
+
+}
+.card-title-more-name{
+font-weight: 500;
+font-size: 40px;
+color: #212121;
+margin: 0;
+}
+.card-more-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-more-info-phone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card-more-info-adress{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card-more-info-working-time{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-more-about-block-title{
+    font-weight: 400;
+    font-size: 41px;
+}
+
+.card-more-rating{
+    font-weight: 400;
+font-size: 24px;
+}
+.card-more-about-content-and-advert{
+    display: flex;
+    justify-content: center
+}
+.card-more-advertising{
+    background-color: #358B97;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.rewiews-item-name{
+    font-weight: 300;
+    font-size: 15px;
+    min-height: 110px;
+
+}
+.rewiews-item-name>p{
+    margin: 0px 15px 0px 15px;
+}
+.card-more-about-block-rewiews-item-container{
+    background: #F3F3F3;
+    border-radius: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 120px;
+}
+.card-more-about-block-desc{
+    font-weight: 400;
+font-size: 36px;
+
+word-wrap: break-word;
+color: #1F1F1F;
+}
+.rewiews-item-container-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rewiews-item-container-photo>img{
+    max-width: 91px;
+    max-height: 91px;
+}
+
+.card-more-amount-rewiews-and-how-to-rewiews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-more-about-block-menu h3{
+font-weight: 500;
+font-size: 40px;
+color: #212121;
+margin: 22px 0 28px 0
+}
+.card-more-about-block-menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-more-info>div>img{
+    margin: 5px;
+}
+.card-more-about-block-rewiews-item{
+    margin: 15px 0 15px 0
+}
+/* .nav-block {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 auto;
+
+}
+.nav-block-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+} */
+
+.slick-list{
+    width: 577px;
+    height: 503px;
+    min-width: 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+}
+
+.slider-menu-container{
+
+}
+.slider-item{
+
+}
+
+.card-more-slider-container img{
+    width: 100%;
+}
+
+
+
+.slick-next {
+    right: -50px;
+}
+.slick-prev {
+    left: -50px;
+}
+
+
+.slick-next, .slick-prev {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.slick-next:before, .slick-prev:before{
+    color: #86BE7C;
+    font-size: 40px;
+    opacity: none;
+}

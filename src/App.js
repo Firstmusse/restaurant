@@ -8,24 +8,23 @@ import Footer from "./components/Footer/Footer";
 import  Action  from "./pages/Action/Action";
 import HomeTitle from "./pages/HomeTitle/HomeTitle";
 
-import CoffeMore from "./pages/CoffeMore/CoffeMore";
+import More from "./pages/CardMore/CardMore";
 import NotFound from "./pages/NotFound/NotFound";
 
 import { Routes, Route, Link } from "react-router-dom";
-
-
+ 
 function App() {
-
   return (
     <div className="App">
       {/* <PersonList/> */}
-      <Navigation />
+      
       <Routes>
+        <Route>
         <Route path="/" element={<HomeTitle />} />
         <Route path="/action" element={  <Action/>} />
-        <Route path=":category" element={  <CoffeMore/>} />
-        
+        <Route path="estalibishments/:categoryId/:cardInfoId" element={  <More/>} />
         <Route path="*" element={  <NotFound/>} />
+        </Route>
       </Routes>
       <Footer />
       

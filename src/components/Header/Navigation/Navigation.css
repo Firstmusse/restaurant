@@ -4,6 +4,12 @@
   justify-content: flex-end;
   height: 300px;
   margin-right: 50px;
+  width: 90%;
+}
+.nav-block-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-block-list {
   display: flex;
