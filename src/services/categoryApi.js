@@ -13,6 +13,7 @@ export const getCardsByCategoryId = async (id) => {
   const cards = await axios.get(
     `https://still-forest-37543.herokuapp.com/?category=${id}`
   );
+  // console.log(cards.data);
   return cards.data;
 };
 

@@ -12,7 +12,7 @@ function Footer() {
             <div className="footer-wrapper-contant">
             <div className="footer-nav">
           <a href="#">О нас</a>
-          <a href="#">Все заведения</a>
+          <Link to='/allEstabilshments'>Все заведения</Link>
           <Link to='/action'>Акции</Link>
         </div>
         <div className="footer-social">

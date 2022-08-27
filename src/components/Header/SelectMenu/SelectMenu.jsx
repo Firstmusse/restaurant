@@ -24,7 +24,7 @@ function SelectMenu() {
       <ul>
         {list.map((category) => {
           return (
-            <Link key={category.id} to={`establishments/${category.id}`}>
+            <Link key={category.id} to={`estalibishments/${category.id}`}>
               <li >{category.name}</li>
             </Link>
           );

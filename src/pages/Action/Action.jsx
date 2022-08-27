@@ -8,7 +8,7 @@ import ActionImg from "../../assets/img/action-post-img.svg";
 import Discount from "../../components/Body/Discount/Discount";
 import HeaderWithLogo from "../../components/HeaderWithLogo/HeaderWithLogo";
 
-
+  
 function Action() {
   
   const [actionList, setActionList] = useState([]);
